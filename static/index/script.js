@@ -14,9 +14,16 @@ function initNavigation() {
     const buttonPlay = document.getElementById("buttonplay");
     if (buttonPlay) {
         buttonPlay.addEventListener("click", () => navigateTo("/play"));
-        document.getElementById("buttonhowtoplay").addEventListener("click", () => navigateTo("/howtoplay"));
-        document.getElementById("buttonleaderboard").addEventListener("click", () => navigateTo("/leaderboard"));
-        document.getElementById("buttonlogin").addEventListener("click", () => navigateTo("/login"));
+        document
+            .getElementById("buttonhowtoplay")
+            .addEventListener("click", () => navigateTo("/howtoplay"));
+        document
+            .getElementById("buttonleaderboard")
+            .addEventListener("click", () => navigateTo("/leaderboard"));
+        document
+            .getElementById("buttonlogin")
+            .addEventListener("click", () => navigateTo("/login"));
+    }
 }
 
 //clear footer, main and header
