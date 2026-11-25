@@ -1,8 +1,6 @@
 // main screen buttons and add them to main
 function mainScreen() {
     const main = document.querySelector("main");
-    main.innerHTML = "";
-
     const startButton = document.createElement("button");
     startButton.textContent = "Start Game";
     main.appendChild(startButton);
@@ -11,9 +9,8 @@ function mainScreen() {
     settingsButton.textContent = "Settings";
     main.appendChild(settingsButton);
 }
-mainScreen();
-//clear footer, main and header
 
+//clear footer, main and header
 function clearScreen() {
     const main = document.querySelector("main");
     const header = document.querySelector("header");
@@ -22,3 +19,6 @@ function clearScreen() {
     header.innerHTML = "";
     footer.innerHTML = "";
 }
+
+clearScreen();
+mainScreen();
