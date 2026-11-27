@@ -32,6 +32,10 @@ main {
     line-height: 1.2;
 }
 
+.how-to-play * {
+    font-family: inherit;
+}
+
 .how-to-play h1 {
     margin-bottom: 1em;
 }
@@ -94,9 +98,14 @@ main {
 }
 .view {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
+    min-height: calc(100vh - 80px);
+}
+.view h1 {
+    margin-bottom: 5rem;
+    font-size: 3rem;
 }
 .menu-box {
     background-color: #009999;
