@@ -35,6 +35,3 @@ function clearScreen() {
     header.innerHTML = "";
     footer.innerHTML = "";
 }
-
-clearScreen();
-mainScreen();
