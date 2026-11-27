@@ -2,13 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: aqua;
-    font-family: Arial, sans-serif;
+    background-color: #009999;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: aqua;
+    background-color: #009999;
     color: black;
 }
 
@@ -21,4 +20,72 @@ footer {
 
 main {
     padding: 20px;
+    text-align: center;
+}
+
+.how-to-play {
+    text-align: center;
+    font-family: Aldrich, sans-serif;
+    line-height: 1.2;
+}
+
+.how-to-play h1 {
+    margin-bottom: 1em;
+}
+
+.how-to-play p {
+    margin-bottom: 1em;
+}
+
+.how-to-play img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto 1em;
+}
+
+.leaderboard table {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+}
+
+.page-box {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.page-box * {
+    background-color: transparent;
+}
+
+.home-enabled {
+    padding-top: 3.5rem;
+}
+
+.home-enabled .home-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.leaderboard th,
+.leaderboard td {
+    padding: 0.75rem 1rem;
 }
