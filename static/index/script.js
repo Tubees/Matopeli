@@ -38,13 +38,13 @@ function clearScreen() {
 
 function navigateTo(route) {
     if (route === "/play") {
-        window.location.href = "../play/play.html";
+        window.location.href = "../play";
     } else if (route === "/howtoplay") {
-        window.location.href = "../howtoplay/howtoplay.html";
+        window.location.href = "../howtoplay";
     } else if (route === "/leaderboard") {
-        window.location.href = "../leaderboard/leaderboard.html";
+        window.location.href = "../leaderboard";
     } else if (route === "/login") {
-        window.location.href = "../login/login.html";
+        window.location.href = "../login";
     }
 }
 initNavigation();
