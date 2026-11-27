@@ -11,17 +11,17 @@ function mainScreen() {
 }
 
 function initNavigation() {
-    const buttonPlay = document.getElementById("buttonplay");
+    const buttonPlay = document.getElementById("btnplay");
     if (buttonPlay) {
         buttonPlay.addEventListener("click", () => navigateTo("/play"));
         document
-            .getElementById("buttonhowtoplay")
+            .getElementById("btnhowtoplay")
             .addEventListener("click", () => navigateTo("/howtoplay"));
         document
-            .getElementById("buttonleaderboard")
+            .getElementById("btnleaderboard")
             .addEventListener("click", () => navigateTo("/leaderboard"));
         document
-            .getElementById("buttonlogin")
+            .getElementById("btnlogin")
             .addEventListener("click", () => navigateTo("/login"));
     }
 }
@@ -35,3 +35,16 @@ function clearScreen() {
     header.innerHTML = "";
     footer.innerHTML = "";
 }
+
+function navigateTo(route) {
+    if (route === "/play") {
+        window.location.href = "../play/play.html";
+    } else if (route === "/howtoplay") {
+        window.location.href = "../howtoplay/howtoplay.html";
+    } else if (route === "/leaderboard") {
+        window.location.href = "../leaderboard/leaderboard.html";
+    } else if (route === "/login") {
+        window.location.href = "../login/login.html";
+    }
+}
+initNavigation();
