@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #009999;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 
 header,
 footer {
-    background-color: #f1f1f1;
+    background-color: #009999;
     padding: 10px;
     text-align: center;
 }
@@ -90,4 +91,42 @@ main {
 .leaderboard th,
 .leaderboard td {
     padding: 0.75rem 1rem;
+}
+.view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+.menu-box {
+    background-color: #009999;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.btn-big {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 24px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.btn-big:hover {
+    background-color: #464d46;
+}
+.btn-small {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 14px;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-small:hover {
+    background-color: #464d46;
 }
